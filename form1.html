@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Details</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #loginContainer {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: rgb(18, 14, 14);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+
+        #forgotPassword {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        #signupLink {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+            
+
+            <h3>
+                <div id="loginContainer">
+                    <h2>User Login</h2>
+
+            
+            
+                    <form id="loginForm" action="/login" method="post">
+
+            <label>Username</label> 
+                <input type="text" placeholder="Enter Username" name="username" required> <br> 
+
+            <label>Password : </label> 
+                <input type="password" placeholder="Enter Password" name="password" required> <br> 
+
+            <b> <button type="submit">Login</button> </b><br>
+            </form>
+
+            <div id="forgotPassword">
+                <a href="/forgot-password">Forgot Password?</a>
+            </div>
+    
+            <div id="signupLink">
+                <button onclick="location.href='/signup'">Sign Up</button>
+            </div>
+            </div>
+         </h3>
+            <br/>
+            <br/>
+
+           
+       
+</body> 
+</html>
